@@ -3,10 +3,10 @@
 ## Table of Contents
 1. [Assignment 1: Automated Instance Management Using AWS Lambda and Boto3](#assignment-1-automated-instance-management-using-aws-lambda-and-boto3)
     1. [Setup](#1-setup)
-    2. [Lambda Function Creation](#lambda-function-creation)
+    2. [Lambda Function Creation](#2-lambda-function-creation)
         1. [Setting up an IAM role](#setting-up-an-iam-role)
         2. [Setting up a Lambda function](#setting-up-a-lambda-function)
-    3. [Coding](#coding)
+    3. [Coding](#3-coding)
     4. [Testing](#4-testing)
 
 ## Assignment 1: Automated Instance Management Using AWS Lambda and Boto3
