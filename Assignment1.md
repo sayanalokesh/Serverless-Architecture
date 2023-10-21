@@ -17,9 +17,9 @@
 ### 1. Setup
 
 a. We need to create 2 instances as shown below and name the tags under actions as Auto-Start and Auto-Stop respectively.
-![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/b6f53fd3-e757-4cb5-8548-d91562207b29)
-![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/c3ead5bf-3985-4d58-aae7-e45b7e9f925f)
-![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/94b6b076-3bba-47b1-be7c-3e0bed158209)
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/b6f53fd3-e757-4cb5-8548-d91562207b29)
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/c3ead5bf-3985-4d58-aae7-e45b7e9f925f)
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/94b6b076-3bba-47b1-be7c-3e0bed158209)
 
 
 ### 2. Lambda Function Creation
@@ -30,40 +30,40 @@ a. We need to create an IAM role first before creating a Lambda function. Please
 
 b. We need to go to the AWS console and select IAM. We can find Roles under Access Management and click on Create Role.
 
-c. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/e5f7416e-3798-4c6a-872e-7e35645edfe4)
+> c. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/e5f7416e-3798-4c6a-872e-7e35645edfe4)
 
 d. Select Lambda from the services and click next.
-![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/9c70d4ea-28ba-4c09-a8e4-2ed368f45766)
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/9c70d4ea-28ba-4c09-a8e4-2ed368f45766)
 
 e. Type EC2full in the search bar and select AmazonEC2FullAccess then click next.
-![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/351f26ba-c4ce-4754-bc86-10c5e9a9233e)
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/351f26ba-c4ce-4754-bc86-10c5e9a9233e)
 
 f. Give a name for the Role and scroll down and click on Create Role.
 
-g. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/37f8e8a9-7292-49d5-ac06-f0e798b63c5a)
-![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/c74b37af-2d6a-4a04-83ca-fdb8b423bfbb)
+> g. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/37f8e8a9-7292-49d5-ac06-f0e798b63c5a)
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/c74b37af-2d6a-4a04-83ca-fdb8b423bfbb)
 
 h. A role will be created and you can see the same in the dashboard.
-![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/b8cccafa-e87b-4b69-9089-0d76a3904caa)
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/b8cccafa-e87b-4b69-9089-0d76a3904caa)
 
 
 #### Setting up a Lambda function
 
 a. We need to create a Lambda function using the IAM role to execute the task.
 
-b. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/c20147db-4939-4ce8-b506-bab123dbabcd)
+> b. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/c20147db-4939-4ce8-b506-bab123dbabcd)
 
 c. Once we select the execution role, we need to click on the create function.
-![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/1620808d-f98b-40b7-a661-6ba66204340d)
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/1620808d-f98b-40b7-a661-6ba66204340d)
 
 d. Once the function is created, it will appear as below.
-![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/ee6a2279-d979-4446-853e-8ec87e94b977)
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/ee6a2279-d979-4446-853e-8ec87e94b977)
 
 ### 3. Coding
 
 a. Once it is done, we need to scroll down and write a code to finish the task. This code will check the tags we assign at the very beginning. Once the code identifies the tags, it will stop the instance if the tag is identified as Auto-Stop and start the instance if it finds it as Auto-Start.
 
-b. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/55924ca8-6c38-4dd5-9f08-d56951841ff8)
+> b. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/55924ca8-6c38-4dd5-9f08-d56951841ff8)
 
 
 ### 4. Testing
@@ -98,11 +98,8 @@ def lambda_handler(event, context):
 
 ```
 
-d. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/8207f8a5-e8d2-40a2-9b66-3eec85c17236)
+> d. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/8207f8a5-e8d2-40a2-9b66-3eec85c17236)
 
-e. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/cf95b18d-33cc-4029-8fa8-4e1303de6c90)
+> e. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/cf95b18d-33cc-4029-8fa8-4e1303de6c90)
 
-
-f. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/320acc74-48dd-4688-809f-817c391751e6)
-
-
+> f. ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/320acc74-48dd-4688-809f-817c391751e6)
