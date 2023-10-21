@@ -12,6 +12,8 @@
 ---
 
 ## Assignment 20: Load Balancer Health Checker
+### Objective
+Design a Lambda function that checks the health of registered instances behind an Elastic Load Balancer (ELB) and notifies via SNS if any instances are unhealthy.
 
 ### 1. EC2 Instance creation
 - Create 2 EC2 instances with the same security Group and configuration.
