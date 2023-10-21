@@ -61,7 +61,7 @@ Set up a Lambda function that listens to EC2 state change events and sends SNS n
   > ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/dc16517a-a9e6-49da-887c-6fd0346d0ec8)
 
 ## 4. Testing
-- We have written the code and I manually started the Instances.
+- I have written the code and I manually started the Instances.
 ```
 import boto3
 import json
@@ -93,9 +93,13 @@ def lambda_handler(event, context):
         print("Lambda function was invoked manually without a valid event.")
 
 ```
-  > ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/91641194-4dce-4455-84f4-149490079c85)
-
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/91641194-4dce-4455-84f4-149490079c85)
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/89c63258-69cb-4ecd-b60f-feb407428bab)
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/05f6837a-3fc8-4a4f-a0c9-35d18b9592ac)
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/2ef12f7c-76f5-4469-8268-020b73383ace)
 
 - As soon as I started the Instance, SNS triggered the Lambda and sent the email.
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/ff472f28-fa09-4456-9dee-ea36a1b1aa95)
 
 - I have stopped the Instance, and SNS sent an email regarding the status.
+> ![image](https://github.com/sayanalokesh/Serverless-Architecture/assets/105637305/5359f7e5-3aab-4216-bb10-cca3ff7e3070)
